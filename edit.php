@@ -92,7 +92,6 @@ h1{
 <h1 class="text-center">MSU Movie Center</h1>
 	<h2 style="text-align:center">Mohammed Uddin, Dennis  Wanis, Kervin Hyka</h2>
   <div class="container mt-4">
-    <h2>Add a New Movie</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <input type="hidden" name="movie_id" value="<?php echo $movie["MovieID"]; ?>">
 
@@ -117,4 +116,9 @@ h1{
   </div>
 
 </body>
+<footer class="text-center  fixed-bottom">
+<div class="container" style="font-size: 30px;">
+	<span class="text-dark">MSU Movie Center &copy; 2023</span>
+</div>
+</footer>
 </html>
