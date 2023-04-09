@@ -30,23 +30,18 @@ mysqli_close($conn);
   <title>MSU Movie Center</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+
+h1{
+    text-shadow: 4px 4px gray;
+}
+
+
+    </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">MSU Movie Center</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+<h1 class="text-center">MSU Movie Center</h1>
+	<h2 style="text-align:center">Mohammed Uddin, Dennis  Wanis, Kervin Hyka</h2>
   <div class="container mt-4">
     <h2>Add a New Movie</h2>
     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -62,7 +57,8 @@ mysqli_close($conn);
         <label for="genre">Genre:</label>
         <input type="text" class="form-control" id="genre" name="genre" required>
       </div>
-      <button type="submit" class="btn btn-primary">Add Movie</button>
+      <button type="submit" class="btn btn-success">Add Movie</button>
+      <a type="button" href="index.php" class="btn btn-dark" role="button">List All Movies</a>
     </form>
   </div>
 
